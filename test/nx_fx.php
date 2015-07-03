@@ -12,7 +12,7 @@ function nx_fx($methodname,$params)
 	if(array_key_exists($methodname,$funcs))//if desired function is in a policy table
 	{ 	
 		include_once($pfx.$methodname.".php");	 
-		return call_user_func($methodname,&$params); 
+		return call_user_func($methodname,$params); 
 	}
 	else
 	{	return null;

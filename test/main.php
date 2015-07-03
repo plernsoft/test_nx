@@ -6,7 +6,7 @@ $req= json_decode($input,true);//convert to associative array
  $user_req=$req["data"];  
  $method=$user_req["method"];
  include_once("nx_fx.php");   
- $result = nx_fx($method, &$user_req["params"]); 
+ $result = nx_fx($method, $user_req["params"]); 
  
  var_dump($req); 
  
